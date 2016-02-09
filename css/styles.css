@@ -1,17 +1,18 @@
-@font-face {
-  font-family: "handwriting";
-  src: url('journal.eot');
-  src: url('journal.eot?') format('eot'),
-       url('journal.woff') format('woff'),
-       url('journal.ttf') format('truetype');
-}
+@font-face{
+  font-family : "journalregular";
 
-@font-face {
-  font-family: "typewriter";
-  src: url('veteran_typewriter.eot');
-  src: url('veteran_typewriter.eot?') format('eot'),
-       url('veteran_typewriter.woff') format('woff'),
-       url('veteran_typewriter.ttf') format('truetype');
+  src : url('journal.eot');
+  src : url('journal.eot?') format('eot'),
+        url('journal.woff') format('woff'),
+        url('journal.ttf') format('truetype');
+}
+@font-face{
+  font-family : "veteran_typewriterregular";
+
+  src : url('veteran_typewriter.eot');
+  src : url('veteran_typewriter.eot?') format('eot'),
+        url('veteran_typewriter.woff') format('woff'),
+        url('veteran_typewriter.ttf') format('truetype');
 }
 
 /*@media only screen and (min-width: 400px) {*/
@@ -28,7 +29,6 @@
     background: #222;
 
 }
-
 form {
   position: relative;
   width: 740px;
@@ -41,11 +41,48 @@ h1 {
   position: absolute;
   left: 415px;
   top: 185px;
-  font: 1em "typewriter", sans-serif;
+  font: 1em "veteran_typewriterregular", sans-serif;
 }
 
 #from {
   position: absolute;
   left: 398px;
+  top: 235px;
+}
+
+#reply {
+  position: absolute;
+  left: 390px;
   top: 285px;
+}
+
+/*#messages {
+  position: absolute;
+  left: 20px;
+  top: 150px;
+}*/
+
+label {
+  font: .8em "veteran_typewriterregular", sans-serif;
+}
+
+input, textarea {
+  font: 1em/1.5em "journalregular", sans-serif;
+  border: none;
+  padding: 0 10px;
+  margin: 0;
+  width: 220px;
+  background: none;
+}
+textarea {
+  position: absolute;
+  left: 25px;
+  top: 165px;
+  height: 200px;
+}
+
+#labelMsg {
+  position: absolute;
+  left: 15px;
+  top: 145px;
 }
