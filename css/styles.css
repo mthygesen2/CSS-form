@@ -74,7 +74,17 @@ input, textarea {
   width: 220px;
   background: none;
 }
+/*textarea {
+  display: block;
+  padding: 10px;
+  margin: 10px 0 0 -10px;
+  width: 340px;
+  height: 360px;
+  resize: none;
+  overflow: auto;
+}*/
 textarea {
+  resize: none;
   position: absolute;
   left: 25px;
   top: 165px;
@@ -85,4 +95,38 @@ textarea {
   position: absolute;
   left: 15px;
   top: 145px;
+}
+input:focus, textarea:focus {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  outline: none;
+}
+input {
+  height: 2.5em; /* for IE */
+  vertical-align: middle; /* This is optional but makes legacy IE's look better */
+}
+button {
+  position: absolute;
+  left: 440px;
+  top: 360px;
+  padding: 5px;
+  font: bold .6em sans-serif;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background: none;
+  cursor: pointer;
+  -webkit-transform: rotate(1.5deg);
+     -moz-transform: rotate(1.5deg);
+      -ms-transform: rotate(1.5deg);
+       -o-transform: rotate(1.5deg);
+          transform: rotate(1.5deg);
+  }
+
+button:after {
+  content: " >>>";
+}
+button:hover, button:focus {
+  outline: none;
+  background: #000;
+  color: #fff;
 }
