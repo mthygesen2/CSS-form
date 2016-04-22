@@ -1,6 +1,6 @@
 # _Styled Form_
 
-#### _Styled Form to show case the use of pseudo-class. _
+#### Styled Form to show case the use of pseudo-class. 
 
 #### By _**Mao Thygesen and Steve Kinney **_
 
